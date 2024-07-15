@@ -71,7 +71,13 @@
             const input2Element = document.getElementById("input2");
             const resultElement = document.getElementById("match-result-text");
 
-            
+            if (input1Element.value === input2Element.value) {
+                resultElement.innerText = "Matched!!!";
+                resultElement.className = "match-result matched";
+            } else {
+                resultElement.innerText = "Not matched!!!";
+                resultElement.className = "match-result not-matched";
+            }
         }
     </script>
   
